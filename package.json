@@ -1,0 +1,38 @@
+{
+  "name": "barbies-hairs",
+  "private": true,
+  "workspaces": [
+    "backend/barbies-hairs-backend",
+    "frontend/barbies-admins",
+    "frontend/barbies-clients"
+  ],
+  "scripts": {
+    "dev:admins": "cd frontend/barbies-admins && npx next dev -p 3002 -H 0.0.0.0",
+    "dev:clients": "cd frontend/barbies-clients && npx next dev -p 3003 -H 0.0.0.0",
+    "dev:backend": "pnpm --filter barbies-hairs-backend run dev",
+    "dev": "concurrently \"pnpm run dev:backend\" \"pnpm run dev:clients\" \"pnpm run dev:admins\""
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.4.8",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.541.0",
+    "next": "^15.5.2",
+    "next-themes": "^0.4.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "tailwind-merge": "^3.3.1"
+  }
+}

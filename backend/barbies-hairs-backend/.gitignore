@@ -1,0 +1,53 @@
+# =========================
+# Node.js / Express Backend
+# =========================
+
+# dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment files
+.env
+.env.local
+.env.*.local
+
+# build outputs
+dist/
+build/
+coverage/
+
+# logs
+logs
+*.log
+*.log.*
+debug.log
+
+# process manager logs
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# system files
+.DS_Store
+Thumbs.db
+
+# editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional: database dumps
+*.sql
+*.sqlite
+*.db
+
+# Optional: if you store uploads locally (better to use cloud storage)
+uploads/

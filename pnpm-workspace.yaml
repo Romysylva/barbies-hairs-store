@@ -1,0 +1,4 @@
+packages:
+  - "backend/barbies-hairs-backend"
+  - "frontend/barbies-admins"
+  - "frontend/barbies-clients"
