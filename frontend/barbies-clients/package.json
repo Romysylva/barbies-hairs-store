@@ -40,6 +40,7 @@
     "typescript": "^5"
   },
   "engines": {
+    "node": "22.17.1",
     "pnpm": "9.15.2"
   }
 }
